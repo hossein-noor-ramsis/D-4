@@ -298,7 +298,7 @@ header .nav-md .nav-link:hover .text-danger::before {
 }
 
 header .topbar {
-  background-color: #0d1529;
+  background-color: #0e162a;
 }
 header .topbar .bi::before {
   font-weight: bold !important;

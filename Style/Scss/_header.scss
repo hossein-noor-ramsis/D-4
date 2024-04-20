@@ -1,0 +1,165 @@
+/* ===== start of variable ===== */
+$color-primary: #000000;
+$color-secondary: #ffffff;
+$color-tertiary: #777777;
+$transition: 0.3s ease;
+$radius: 0.5rem;
+$shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+$shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+/* ===== end of variable ===== */
+/* ===== start of header ===== */
+header .nav-md {
+    .bi::before {
+        font-weight: bold !important;
+        font-size: 1.2rem;
+        transition: 0.2s;
+    }
+
+    .nav-link:hover .text-danger::before {
+        color: #da655d;
+    }
+}
+
+header .topbar {
+    & {
+        background-color: #0d1529;
+    }
+
+    .bi::before {
+        font-weight: bold !important;
+        font-size: 1.2rem;
+        transition: 0.2s;
+    }
+
+    .nav-link:hover .text-secondary::before {
+        color: white !important;
+    }
+
+    .nav-link:hover .text-danger::before {
+        color: #da655d;
+    }
+
+    @media screen and (max-width: 768px) {
+        .topbar {
+            position: static;
+        }
+
+        .sidebar {
+            position: static;
+        }
+
+        .fixed-top {
+            position: static !important;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+    }
+}
+
+header .sidebar {
+    & {
+        height: 100vh;
+        // width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+            url("../../Source/Image/sidebar-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // box-shadow: 3px 0px 25px #000000;
+    }
+
+    .navbar-brand {
+        border-bottom: 1px groove #eeeeee;
+    }
+
+    .profile-picture {
+        position: relative;
+    }
+
+    .profile-picture img {
+        width: 48px;
+    }
+
+    .upload {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        border-radius: 100%;
+        opacity: 0;
+    }
+
+    .upload:hover {
+        opacity: 0.8;
+    }
+
+    .nav-link {
+        transition: all 0.4s;
+    }
+
+    .nav-link:hover {
+        background-color: rgba($color: #444444, $alpha: 0.8);
+        border-radius: 0.25rem;
+    }
+
+    .nav-link:hover:not(.active) .bi::before {
+        transform: scale(115%);
+    }
+
+    .nav-link:focus .bi::before {
+        transform: scale(100%);
+    }
+
+    .active {
+        background-color: #f44336;
+        border-radius: 0.5rem;
+        box-shadow: 2px 5px 10px #111111;
+        transition: all 0.4s;
+    }
+
+    .active:hover {
+        background-color: #f44336;
+        border-radius: 0.5rem;
+        box-shadow: 2px 5px 10px #111111;
+    }
+
+    @keyframes sidebar-bi {
+        0% {
+            transform: translateY(0rem);
+        }
+
+        10% {
+            transform: translateY(-0.5rem);
+        }
+
+        20% {
+            transform: translateY(0rem);
+        }
+
+        30% {
+            transform: translateY(-0.2rem);
+        }
+
+        40% {
+            transform: translateY(0rem);
+        }
+
+        100% {
+            transform: translateY(0rem);
+        }
+    }
+
+    .bi::before {
+        transition: $transition;
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+    }
+
+    .active:hover .bi::before {
+        animation: sidebar-bi 2s ease infinite;
+    }
+}
+/* ===== end of header ===== */
+/* ===== start of function ===== */
+
+/* ===== end of function ===== */

@@ -458,7 +458,7 @@ template {
 /* ===== start of function ===== */
 .grid-template-1 {
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .grid-template-1 {
@@ -594,7 +594,6 @@ main .cards {
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
-
 @media screen and (min-width: 576px) {
   main .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -605,6 +604,12 @@ main .cards {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+main .payment th, main .payment td {
+  background-color: #0e162a !important;
+  color: white;
+}
+
 /* ===== end of section ===== */
 /* ===== start of variable ===== */
 /* ===== end of variable ===== */

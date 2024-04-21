@@ -266,14 +266,14 @@ $my-bg: #0e162a;
         }
     }
 }
-
 /* ===== end of repetitive codes ===== */
 /* ===== start of function ===== */
 .grid-template-1 {
     & {
         display: grid;
-        gap: 1rem;
+        gap: 1.5rem;
     }
+
     @media screen and (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
     }

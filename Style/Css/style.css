@@ -282,6 +282,10 @@ template {
 /* ===== start of variable ===== */
 /* ===== end of variable ===== */
 /* ===== start of repetitive codes ===== */
+.my-bg {
+  background-color: #0e162a;
+}
+
 /* ===== end of repetitive codes ===== */
 /* ===== start of function ===== */
 /* ===== end of function ===== */
@@ -407,11 +411,27 @@ header .sidebar .active:hover .bi::before {
 /* ===== start of variable ===== */
 /* ===== end of variable ===== */
 /* ===== start of section ===== */
+main .cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  main .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  main .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 /* ===== end of section ===== */
-/* ===== start of function ===== */
-/* ===== end of function ===== */
-/* ===== start of function ===== */
-/* ===== end of function ===== */
+/* ===== start of variable ===== */
+/* ===== end of variable ===== */
+/* ===== start of section ===== */
+/* ===== end of section ===== */
 /* ===== start of variable ===== */
 /* ===== end of variable ===== */
 /* ===== start of footer ===== */

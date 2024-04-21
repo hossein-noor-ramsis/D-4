@@ -1,8 +1,10 @@
 /* ===== start of variable ===== */
-
+$my-bg: #0e162a;
 /* ===== end of variable ===== */
 /* ===== start of repetitive codes ===== */
-
+.my-bg {
+    background-color: $my-bg;
+}
 /* ===== end of repetitive codes ===== */
 /* ===== start of function ===== */
 

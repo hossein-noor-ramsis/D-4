@@ -466,6 +466,16 @@ template {
   }
 }
 
+.grid-template-2 {
+  display: grid;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .grid-template-2 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
 /* ===== end of function ===== */
 /* ===== start of variable ===== */
 /* ===== end of variable ===== */
@@ -618,6 +628,11 @@ main .payment th, main .payment td {
 /* ===== start of variable ===== */
 /* ===== end of variable ===== */
 /* ===== start of footer ===== */
+footer .nav-link {
+  text-decoration: none;
+  color: white;
+}
+
 /* ===== end of footer  ===== */
 /* ===== start of function ===== */
 /* ===== end of function ===== *//*# sourceMappingURL=style.css.map */

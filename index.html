@@ -29,8 +29,6 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -299,7 +297,7 @@
                 </div>
             </section>
         </header>
-        <main class="container-xxl p-0">
+        <main class="p-0">
             <section class="row gx-0 mt-4">
                 <!------ start nav shadow------>
                 <section class="nav-shadow col-md-3 col-xl-2"></section>
@@ -560,9 +558,14 @@
                     <!------ start pyment & ticket ------>
                     <section class="grid-template-1">
                         <section class="payment">
-                            <h4 class="text-center m-0 py-2 my-bg text-white rounded-top">Payment</h4>
+                            <h4 class="text-center m-0 py-4 my-bg text-white rounded-top">
+                                Payment
+                            </h4>
 
-                            <div class="table-responsive overflow-scroll rounded-bottom" style="max-height: 205px">
+                            <div
+                                class="table-responsive overflow-x-auto rounded-bottom"
+                                style="max-height: 205px"
+                            >
                                 <table class="table table-dar m-0 text-center">
                                     <thead>
                                         <tr>
@@ -669,9 +672,12 @@
                         </section>
 
                         <section class="ticket">
-                            <h4 class="text-center m-0 py-2 rounded-top">Tickets</h4>
+                            <h4 class="text-center m-0 py-4 rounded-top">Tickets</h4>
 
-                            <div class="table-responsive overflow-scroll rounded-bottom" style="max-height: 205px">
+                            <div
+                                class="table-responsive overflow-x-auto rounded-bottom"
+                                style="max-height: 205px"
+                            >
                                 <table class="table table-striped m-0 text-center">
                                     <thead>
                                         <tr>
@@ -779,6 +785,187 @@
                                         </li>
                                     </ul>
                                 </nav>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!------ start history & post ------>
+                    <section class="grid-template-1">
+                        <section class="history">
+                            <h4 class="text-center py-3">History</h4>
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item my-">
+                                    <h2 class="accordion-header" id="heading-1">
+                                        <button
+                                            class="accordion-button bg-light"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-1"
+                                            aria-expanded="true"
+                                            aria-controls="collapse-1"
+                                        >
+                                            <div class="d-flex align-items-center gap-3 m-0">
+                                                <img
+                                                    class="rounded-circle"
+                                                    src="./Source/Image/p1.jpg"
+                                                    alt=""
+                                                    style="
+                                                        width: 48px;
+                                                        height: 48px;
+                                                        object-fit: cover;
+                                                    "
+                                                />
+                                                <h5>Lorem ipsum dolor sit.</h5>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapse-1"
+                                        class="accordion-collapse collapse show"
+                                        aria-labelledby="heading-1"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Dicta necessitatibus, error accusantium velit
+                                                magnam assumenda tenetur quos ut? Quae numquam eaque
+                                                est. Nesciunt laudantium est harum in officiis
+                                                assumenda totam minima deleniti?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-2">
+                                        <button
+                                            class="accordion-button bg-light"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-2"
+                                            aria-expanded="true"
+                                            aria-controls="collapse-2"
+                                        >
+                                            <div class="d-flex align-items-center gap-2 m-0">
+                                                <img
+                                                    class="rounded-circle"
+                                                    src="./Source/Image/p3.jpg"
+                                                    alt=""
+                                                    style="
+                                                        width: 48px;
+                                                        height: 48px;
+                                                        object-fit: cover;
+                                                    "
+                                                />
+                                                <h5>Lorem ipsum dolor sit.</h5>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapse-2"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="heading-2"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Dicta necessitatibus, error accusantium velit
+                                                magnam assumenda tenetur quos ut? Quae numquam eaque
+                                                est. Nesciunt laudantium est harum in officiis
+                                                assumenda totam minima deleniti?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-3">
+                                        <button
+                                            class="accordion-button bg-light"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-3"
+                                            aria-expanded="true"
+                                            aria-controls="collapse-3"
+                                        >
+                                            <div class="d-flex align-items-center gap-3 m-0">
+                                                <img
+                                                    class="rounded-circle"
+                                                    src="./Source/Image/p2.jpg"
+                                                    alt=""
+                                                    style="
+                                                        width: 48px;
+                                                        height: 48px;
+                                                        object-fit: cover;
+                                                    "
+                                                />
+                                                <h5>Lorem ipsum dolor sit.</h5>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapse-3"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="heading-3"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Dicta necessitatibus, error accusantium velit
+                                                magnam assumenda tenetur quos ut? Quae numquam eaque
+                                                est. Nesciunt laudantium est harum in officiis
+                                                assumenda totam minima deleniti?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-4">
+                                        <button
+                                            class="accordion-button bg-light"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapse-4"
+                                            aria-expanded="true"
+                                            aria-controls="collapse-4"
+                                        >
+                                            <div class="d-flex align-items-center gap-3 m-0">
+                                                <img
+                                                    class="rounded-circle"
+                                                    src="./Source/Image/p3.jpg"
+                                                    alt=""
+                                                    style="
+                                                        width: 48px;
+                                                        height: 48px;
+                                                        object-fit: cover;
+                                                    "
+                                                />
+                                                <h5>Lorem ipsum dolor sit.</h5>
+                                            </div>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapse-4"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="heading-4"
+                                        data-bs-parent="#accordionExample"
+                                    >
+                                        <div class="accordion-body">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Dicta necessitatibus, error accusantium velit
+                                                magnam assumenda tenetur quos ut? Quae numquam eaque
+                                                est. Nesciunt laudantium est harum in officiis
+                                                assumenda totam minima deleniti?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </section>
                     </section>
